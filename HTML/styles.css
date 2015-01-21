@@ -114,18 +114,23 @@ a img{border:0px;}
 #experience .col-mid{margin:0px 65px;}
 
 /****************************************************/
-/* WORK SECTION */
+/* PROJECT SECTION */
 /****************************************************/
 
 #work{margin:0px 43px; padding-top:115px;}
 #work .content{overflow:auto;}
-#work #work-thumbs li{
+#work #project-thumbs li{
 	list-style:none;
 	float:left;
 	margin:0px 20px 15px 0px;
 	padding:0px;
 }
-#work #work-thumbs li.last{margin:0px;}
+#work #project-thumbs li.last{margin:0px;}
+
+#work #project-thumbs .project-img{
+	height:180px;
+	width: 200px;
+}
 
 /****************************************************/
 /* CONNECT SECTION */
