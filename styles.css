@@ -36,11 +36,11 @@ a img{border:0px;}
 }
 #header #logo{
 	padding-top:14px;
+	margin-left: 50px;
 	float:left;
 }
 #header #logo-title{
 	padding-top:40px;
-	margin-left: 20px;
 	float:left;
 	font: 400 45px/25px 'Bree Serif', Georgia, serif; color:#6a6969;
 }
