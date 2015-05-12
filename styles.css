@@ -296,10 +296,10 @@ h2.project-title {
 #sm-links li{
 	list-style:none;
 	float:left;
+	margin-right:90px;
 }
 #sm-links li a{
 	display:block;
-	margin-right:70px;
 }
 
 #sm-links li a img{
