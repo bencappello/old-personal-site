@@ -130,11 +130,12 @@ a img{border:0px;}
 #work #project-thumbs li{
 	list-style:none;
 	float:left;
-	margin:0px 20px 15px 0px;
+	margin:0px 60px 40px 0px;
 	padding:0px;
 	width: 400px;
 }
 #work #project-thumbs li.last{margin:0px;}
+#work #project-thumbs li.bottom{margin-bottom:0px;}
 
 #work #project-thumbs .project-img{
 	width: 100%;
@@ -169,23 +170,37 @@ ul#project-thumbs li .img-container:hover .overlay {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%);
-	width: 255px;
+	transform: translateX(-50%) translateY(-40%);
+	-webkit-transform: translateX(-50%) translateY(-40%);
+	width: 315px;
+}
+
+.btn-container .project-btn:first-of-type {
+	margin-right: 30px;
 }
 
 .project-btn {
-	font-size: 36px;
-	color: white;
+	font-size: 56px;
+	font-weight: 700;
+	color: rgba(0,0,0,0.6);
+	/*color: white;
 	padding: 10px;
 	background-color: #211D73;
-	border: 2px solid white;
-	margin-left: 5px;
-	margin-right: 5px;
+	border: 2px solid white;*/
 }
 
 .project-btn:hover {
-	background-color: #171457;
-	color: #DEDEDE;
+	color: rgba(0,0,0,1);
+	/*background-color: #171457;
+	color: #DEDEDE;*/
+}
+
+h2.project-title {
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 /****************************************************/
