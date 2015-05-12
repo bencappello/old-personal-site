@@ -33,7 +33,7 @@ a img{border:0px;}
 	top:0px;
 	left:50%;
 	margin: 0 0 0 -475px;
-	z-index: 2;
+	z-index: 100;
 }
 #header #logo{
 	padding-top:14px;
@@ -110,16 +110,64 @@ a img{border:0px;}
 #about .content #service-icons li.services-photo{background:url(images/icon-4.png) no-repeat;}
 
 /****************************************************/
-/* EXPERIENCE SECTION */
+/* RESUME SECTION */
 /****************************************************/
 
-#experience{margin:0px 43px; padding-top:115px;}
-#experience .col{
+#resume{margin:0px 43px; padding-top:115px;}
+#resume .col{
 	width:235px;
 	float:left;
 }
-#experience .content{overflow:auto;}
-#experience .col-mid{margin:0px 65px;}
+#resume .content{overflow:auto;}
+#resume .col-mid{margin:0px 65px;}
+
+.resume-container {
+	position: relative;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.resume-img {
+	display: block;
+	width: 400px;
+	border-radius: 10px;
+}
+.resume-overlay {
+	display:block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+	z-index: 2;
+	transition: background 0.3s;
+}
+
+.resume-overlay:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.resume-overlay span{
+	visibility: hidden;
+	font-size: 60px;
+	font-weight: 700;
+	color: #979797;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	transition: opacity 0.3s, visibility 0.3s;
+}
+
+.resume-overlay:hover span{
+	visibility: visible;
+	opacity: 1;
+}
 
 /****************************************************/
 /* PROJECT SECTION */
@@ -172,7 +220,7 @@ ul#project-thumbs li .img-container:hover .overlay {
 	left: 50%;
 	transform: translateX(-50%) translateY(-40%);
 	-webkit-transform: translateX(-50%) translateY(-40%);
-	width: 315px;
+	width: 265px;
 }
 
 .btn-container .project-btn:first-of-type {
@@ -180,19 +228,13 @@ ul#project-thumbs li .img-container:hover .overlay {
 }
 
 .project-btn {
-	font-size: 56px;
+	font-size: 46px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.6);
-	/*color: white;
-	padding: 10px;
-	background-color: #211D73;
-	border: 2px solid white;*/
 }
 
 .project-btn:hover {
 	color: rgba(0,0,0,1);
-	/*background-color: #171457;
-	color: #DEDEDE;*/
 }
 
 h2.project-title {
