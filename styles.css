@@ -20,6 +20,12 @@ a img{border:0px;}
 	padding-bottom:100px;
 }
 
+.clearfix {
+	display: block;
+	clear: both;
+	content: '';
+}
+
 /****************************************************/
 /* HEADER */
 /****************************************************/
@@ -187,6 +193,11 @@ a img{border:0px;}
 	transition: all 0.5s;
 }
 
+#work p {
+	font-size: 14px;
+	text-align: justify;
+}
+
 ul#project-thumbs li .img-container:hover .project-img {
 	transform: scale(1.2);
 }
@@ -221,7 +232,6 @@ ul#project-thumbs li .img-container:hover .overlay {
 .btn-container {
 	position: absolute;
 	top: 30%;
-	left: 0;
 	width: 100%;
 	opacity: 0;
 	text-align: center;
@@ -267,6 +277,29 @@ h2.project-title {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+/****************************************************/
+/* SKILLS SECTION */
+/****************************************************/
+#skills{margin:0px 43px; padding-top:115px;}
+#skills .content{overflow:auto;}
+
+.skills-container {
+	width: 740px;
+	margin: auto;
+}
+.icon {
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 40px;
+}
+.icon img {
+	width: 100px;
+	max-height: 100px;
+}
+#skills .last{margin:0px;}
+#skills .bottom{margin-bottom:0px;}
+
 
 /****************************************************/
 /* CONNECT SECTION */
