@@ -328,49 +328,6 @@ h2.project-title {
 /****************************************************/
 #connect{margin:0px 43px; padding-top:115px;}
 #connect .content{overflow:auto;}
-#connect #form{
-	width:410px;
-	float:left;
-}
-#connect #form span{
-	display:block;
-	float:left;
-	width:100px;
-	padding-top:5px;
-	font: 400 14px/16px 'Bree Serif', Georgia, serif;
-}
-#connect #form input{
-	float:left;
-	width:255px;
-	border:0px;
-	color:#3b3b3b;
-	padding:10px 10px 10px 30px;
-	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
-	margin-bottom:10px;
-}
-#connect #form textarea{
-	float:left;
-	border:0px;
-	width:255px;
-	height:100px;
-	padding:10px 10px 10px 30px;
-	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
-	color:#3b3b3b;
-}
-
-#connect #form input.name{background:#222222 url(images/icon-user.png) no-repeat 10px 8px;}
-#connect #form input.email{background:#222222 url(images/icon-mail.png) no-repeat 10px 9px;}
-#connect #form textarea.message{background:#222222 url(images/icon-message.png) no-repeat 10px 8px;}
-#connect #form input.submit{
-	width:75px;
-	height:30px;
-	float:right;
-	padding:0px 0px 5px 0px;
-	margin:10px 16px 0px 0px;
-	background:#222222;
-	color:#3b3b3b;
-	font: 400 14px/16px 'Bree Serif', Georgia, serif;
-}
 
 .ctct-links {
 	text-align: center;
@@ -381,7 +338,7 @@ h2.project-title {
 #sm-links li{
 	list-style:none;
 	float:left;
-	margin-right:90px;
+	margin-right:120px;
 }
 #sm-links li a{
 	display:block;
@@ -389,13 +346,10 @@ h2.project-title {
 
 #sm-links li a img{
 	display:block;
-	width:126px;
-	height:126px;
+	width:100px;
+	height:100px;
 	border-radius: 30px;
 }
-/*#sm-links li a.facebook{background:url(images/sm-icons/sm-facebook-icon.png) no-repeat;}
-#sm-links li a.github{content:url(images/sm-icons/sm-github-icon.png) no-repeat; background-color:#6a6969; border-radius: 3px;}
-#sm-links li a.linkedin{background:url(images/sm-icons/sm-linkedin-icon.png) no-repeat;}*/
 
 /****************************************************/
 /* MISC */
