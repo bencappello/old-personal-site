@@ -184,12 +184,18 @@ a img{border:0px;}
 #work #project-thumbs .project-img{
 	width: 100%;
 	height: 100%;
+	transition: all 0.5s;
+}
+
+ul#project-thumbs li .img-container:hover .project-img {
+	transform: scale(1.2);
 }
 
 ul#project-thumbs li .img-container {
 	position: relative;
 	height:250px;
 	width: 400px;
+	overflow: hidden;
 }
 
 .overlay {
