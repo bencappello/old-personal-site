@@ -136,7 +136,7 @@ a img{border:0px;}
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.2);
 	border-radius: 10px;
 	z-index: 2;
 	transition: background 0.3s;
@@ -192,11 +192,6 @@ ul#project-thumbs li .img-container {
 	width: 400px;
 }
 
-ul#project-thumbs li .img-container:hover .overlay {
-	visibility: visible;
-	opacity: 1;
-}
-
 .overlay {
 	visibility: hidden;
 	opacity: 0;
@@ -206,17 +201,38 @@ ul#project-thumbs li .img-container:hover .overlay {
 	top: 0;
 	left: 0;
 	background: rgba(255,255,255,0.8);
-	transition: visibility 0.3s, opacity 0.3s;
-	-webkit-transition: visibility 0.3s, opacity 0.3s;
+	-webkit-transition: visibility 0.4s, opacity 0.4s;
+	-moz-transition: visibility 0.4s, opacity 0.4s;
+	-o-transition: visibility 0.4s, opacity 0.4s;
+	transition: visibility 0.4s, opacity 0.4s;
+}
+
+ul#project-thumbs li .img-container:hover .overlay {
+	visibility: visible;
+	opacity: 1;
 }
 
 .btn-container {
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 50%;
-	transform: translateX(-50%) translateY(-40%);
-	-webkit-transform: translateX(-50%) translateY(-40%);
 	width: 265px;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-40%);
+	-moz-transform: translateX(-50%) translateY(-40%);
+	-ms-transform: translateX(-50%) translateY(-40%);
+	-o-transform: translateX(-50%) translateY(-40%);
+	transform: translateX(-50%) translateY(-40%);
+
+	-webkit-transition: top 0.5s, opacity 0.5s;
+	-moz-transition: top 0.5s, opacity 0.5s;
+	-o-transition: top 0.5s, opacity 0.5s;
+	transition: top 0.5s, opacity 0.5s;
+}
+
+ul#project-thumbs li .img-container:hover .btn-container {
+	top: 50%;
+	opacity: 1;
 }
 
 .btn-container .project-btn:first-of-type {
@@ -227,6 +243,10 @@ ul#project-thumbs li .img-container:hover .overlay {
 	font-size: 46px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.6);
+	-webkit-transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-o-transition: color 0.4s;
+	transition: color 0.4s;
 }
 
 .project-btn:hover {
