@@ -171,6 +171,28 @@ a img{border:0px;}
 	opacity: 1;
 }*/
 
+.download-dropdown {
+	position: fixed;
+	top: 30px;
+	left: 50%;
+	background: #1A1A1A;
+	color: #B3B3B3;
+	border-radius: 10px;
+	padding: 40px 30px 20px 30px;
+	transform: translateX(-50%);
+	transition: top 0.7s;
+	z-index: 99;
+}
+
+h4 {
+	font-size: 20px;
+	margin: 0;
+}
+
+.resume-container:hover .download-dropdown {
+	top: 90px;
+}
+
 /****************************************************/
 /* PROJECT SECTION */
 /****************************************************/
