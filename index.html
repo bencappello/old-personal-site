@@ -34,15 +34,15 @@
 
 <body>
 <div id="header">
-	<div id="logo"><a href="#"><img src="images/bc-logo.png"> </a></div>
+	<div id="logo"><a class="ease" href="#about"><img src="images/bc-logo.png"></a></div>
 	<div id="logo-title">Benjamin Cappello</div>
 
 	<ul id="main-menu">
-		<li><a href="#about">About</a></li>
-    <li><a href="#work">Portfolio</a></li>
-		<li><a href="#skills">Skills</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#connect">Contact</a></li>
+		<li><a class="ease" href="#about">About</a></li>
+    <li><a class="ease" href="#work">Portfolio</a></li>
+		<li><a class="ease" href="#skills">Skills</a></li>
+    <li><a class="ease" href="#resume">Resume</a></li>
+    <li><a class="ease" href="#connect">Contact</a></li>
   </ul>
 
 </div>
@@ -53,9 +53,9 @@
     <div id="about">
     	<h1>About</h1>
       <ul id="top-social">
-      	<li><a href="https://www.facebook.com/ben.cappello" class="facebook">Facebook</a></li>
-          <li><a href="https://github.com/bencappello" class="github">Github</a></li>
-          <li><a href="https://www.linkedin.com/profile/view?id=132221807&trk=nav_responsive_tab_profile" class="linkedin">LinkedIn</a></li>
+      	<li><a href="https://www.facebook.com/ben.cappello" class="facebook" target="_blank">Facebook</a></li>
+          <li><a href="https://github.com/bencappello" class="github" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/bencappello" class="linkedin" target="_blank">LinkedIn</a></li>
       </ul>
       <div class="top-divider"></div>
       <div class="content">
@@ -85,8 +85,8 @@ Begin Project Section -->
 									<img class='project-img' src="images/projects/listener.png">
 									<div class="overlay">
 										<div class="btn-container">
-											<a class='project-btn' href="http://www.listenerapp.org/">Live</a>
-											<a class='project-btn' href="https://github.com/bencappello/listener">Github</a>
+											<a class='project-btn' href="http://www.listenerapp.org/" target="_blank">Live</a>
+											<a class='project-btn' href="https://github.com/bencappello/listener" target="_blank">Github</a>
 										</div>
 									</div>
 								</div>
@@ -101,8 +101,8 @@ Begin Project Section -->
 									<img class='project-img' src="images/projects/asteroids.png">
 									<div class="overlay">
 										<div class="btn-container">
-											<a class='project-btn' href="http://bencappello.com/asteroids/">Live</a>
-											<a class='project-btn' href="https://github.com/bencappello/asteroids">Github</a>
+											<a class='project-btn' href="http://bencappello.com/asteroids/" target="_blank">Live</a>
+											<a class='project-btn' href="https://github.com/bencappello/asteroids" target="_blank">Github</a>
 										</div>
 									</div>
 								</div>
@@ -117,7 +117,7 @@ Begin Project Section -->
 									<img class='project-img' src="images/projects/active.png">
 									<div class="overlay">
 										<div class="btn-container">
-											<a class='project-btn' href="https://github.com/bencappello/active_record_lite">Github</a>
+											<a class='project-btn' href="https://github.com/bencappello/active_record_lite" target="_blank">Github</a>
 										</div>
 									</div>
 								</div>
@@ -132,8 +132,8 @@ Begin Project Section -->
 									<img class='project-img' src="images/projects/bulletin.png">
 									<div class="overlay">
 										<div class="btn-container">
-											<a class='project-btn' href="http://www.bulletinstack.com/">Live</a>
-											<a class='project-btn' href="https://github.com/bencappello/bulletin_stack">Github</a>
+											<a class='project-btn' href="http://www.bulletinstack.com/" target="_blank">Live</a>
+											<a class='project-btn' href="https://github.com/bencappello/bulletin_stack" target="_blank">Github</a>
 										</div>
 									</div>
 								</div>
@@ -218,7 +218,7 @@ Begin Connect Section -->
     	<div class="content ctct-links">
 				<ul id="sm-links">
 					<li>
-						<a href="mailto:bencappello@gmail.com?Subject=Hello%20Ben">
+						<a href="mailto:bencappello@gmail.com?Subject=Hello%20Ben" target="_blank">
 							<img src="images/lg-icons/lg-email.png"/>
 							<div class="icon-overlay">
 								<span>Email</span>
@@ -227,7 +227,7 @@ Begin Connect Section -->
 					</li>
 
         	<li>
-						<a href="https://www.facebook.com/ben.cappello">
+						<a href="https://www.facebook.com/ben.cappello" target="_blank">
 							<img src="images/lg-icons/facebook.png"/>
 							<div class="icon-overlay">
 								<span>Facebook</span>
@@ -236,7 +236,7 @@ Begin Connect Section -->
 					</li>
 
 					<li>
-						<a href="https://github.com/bencappello">
+						<a href="https://github.com/bencappello" target="_blank">
 							<img src="images/lg-icons/lg-github.png"/>
 							<div class="icon-overlay">
 								<span>Github</span>
@@ -245,7 +245,7 @@ Begin Connect Section -->
 					</li>
 
 					<li style="margin:0">
-						<a href="https://www.linkedin.com/in/bencappello">
+						<a href="https://www.linkedin.com/in/bencappello" target="_blank">
 							<img src="images/lg-icons/lg-linkedin.png"/>
 							<div class="icon-overlay">
 								<span>Linkedin</span>
@@ -262,7 +262,7 @@ Begin Connect Section -->
   <!-- The JavaScript -->
 			  <script type="text/javascript">
 					$(function() {
-			            $('#main-menu li a').bind('click',function(event){
+			            $('a.ease').bind('click',function(event){
 			                var $anchor = $(this);
 
 			                $('html, body').stop().animate({
