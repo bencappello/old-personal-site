@@ -267,7 +267,7 @@ ul#project-thumbs li .img-container:hover .btn-container {
 .project-btn {
 	font-size: 46px;
 	font-weight: 700;
-	color: rgba(0,0,0,0.6);
+	color: rgba(0,0,0,0.4);
 	-webkit-transition: color 0.4s;
 	-moz-transition: color 0.4s;
 	-o-transition: color 0.4s;
